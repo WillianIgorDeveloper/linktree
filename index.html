@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!--========== GoogleFonts - Preconnect ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--========== Meta ==========-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Yellow Moon Astronaut">
+    <meta name="description" content="My linktree | Um site que reune links para minhas redes sociais e contato">
+    <!--========== Stylesheet ==========-->
+    <link rel="stylesheet" href="src/styles/global.css" />
+    <!--========== Guide ==========-->
+    <link rel="shortcut icon" href="public/icon.svg" type="image/x-icon">
+    <title>Yellow Moon Astronaut | Linktree</title>
+    <!--========== GoogleFonts ==========-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <img id="frist" src="public/yellow-banner.svg" alt="Yellow Moon - Banner">
+    <div id="second">
+      <h1>Yellow Moon Astronaut</h1>
+      <h2>Desenvolvedor Front-End</h2>
+      <nav>
+        <ul>
+          <li><a target="_blank" href="https://github.com/YellowMoonAstronaut"><img class="white" src="public/github.svg" alt="github"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/willian-igor-santos/"><img src="public/linkedin.svg" alt="linkedin"></a></li>
+          <li><a target="_blank" href="https://www.twitch.tv/yellowmoonastronaut"><img src="public/twitch.svg" alt="twitch"></a></li>
+          <li><a target="_blank" href="mailto:yellowmoonastronaut@gmail.com"><img src="public/gmail.svg" alt="gmail"></a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <!--========== Scripts ==========-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal('#frist');
+      ScrollReveal().reveal('#second', {delay: 200});
+    </script>
+  </body>
+</html>
