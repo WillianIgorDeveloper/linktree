@@ -25,10 +25,11 @@
       <h2>Desenvolvedor Front-End</h2>
       <nav>
         <ul>
-          <li><a target="_blank" href="https://github.com/YellowMoonAstronaut"><img class="white" src="public/github.svg" alt="github"></a></li>
+          <li><a target="_blank" href="https://github.com/YellowMoonAstronaut"><img src="public/github.svg" alt="github"></a></li>
           <li><a target="_blank" href="https://www.linkedin.com/in/willian-igor-santos/"><img src="public/linkedin.svg" alt="linkedin"></a></li>
           <li><a target="_blank" href="https://www.twitch.tv/yellowmoonastronaut"><img src="public/twitch.svg" alt="twitch"></a></li>
           <li><a target="_blank" href="mailto:yellowmoonastronaut@gmail.com"><img src="public/gmail.svg" alt="gmail"></a></li>
+          <li class="discord"><img src="public/discord.svg" alt="discord"><div><input type="text" disabled value="Yellow Moon#0577" id="idDiscord"><img onclick="copy()" class="copy-icon" src="public/copy.svg" alt="copy"></div><span id="copyed" class="copyed"></span></li>
         </ul>
       </nav>
     </div>
@@ -38,6 +39,18 @@
     <script>
       ScrollReveal().reveal('#frist');
       ScrollReveal().reveal('#second', {delay: 200});
+
+      function copy() {
+        const copyText = document.getElementById("idDiscord");
+        copyText.select();
+        copyText.setSelectionRange(0, 100);
+        navigator.clipboard.writeText(copyText.value);
+        document.querySelector('#copyed').innerHTML = 'copiado!'
+        const myTimeout = setTimeout(myGreeting, 1000);
+        function myGreeting() {
+          document.getElementById("copyed").innerHTML = ""
+        }
+      }
     </script>
   </body>
 </html>

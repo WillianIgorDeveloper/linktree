@@ -22,6 +22,7 @@
     /*========== Colors ==========*/
     --yellow: #DE8F00; 
     --white: #FFF;
+    --gray: rgba(255, 255, 255, 0.7);
     --black: #191919;
 }
 
@@ -82,7 +83,7 @@ body div nav ul {
     display: flex;
     gap: 1.75rem;
 }
-body div nav ul li a img {
+body div nav ul li img {
     width: 1.5rem;
 }
 body div nav ul li {
@@ -91,6 +92,43 @@ body div nav ul li {
 body div nav ul li:hover {
     transform: scale(1.5,1.5);
     transition: transform .3s;
+}
+.discord {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body div nav ul li:hover.discord {
+    transform: unset;
+}
+.discord div {
+    display: flex;
+    flex-direction: row;
+    gap: unset;
+}
+.discord div img {
+    width: 1rem;
+}
+.discord div img {
+    width: 1rem;
+    transition: transform .3s;
+}
+.discord div img:hover {
+    cursor: pointer;
+    transform: scale(1.5,1.5);
+    transition: transform .3s;
+
+}
+.discord div input {
+    background-color: unset;
+    border: unset;
+    color: var(--gray);
+    width: 70px;
+    font-size: .5rem;
+}
+.discord span {
+    font-size: .5rem;
+    color: var(--gray);
 }
 
 
@@ -116,5 +154,15 @@ body div nav ul li:hover {
     }
     body div nav {
         margin-top: 2.375rem;
+    }
+    .discord > img {
+        width: 3rem;
+    }
+    .discord div input {
+        width: 110px;
+        font-size: .75rem;
+    }
+    .discord span {
+        font-size: .75rem;
     }
 }
